@@ -49,7 +49,7 @@ header .welcomeSign .welcomeText {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  
+
   button {
     display: inline-block;
     width: 0.75rem;
@@ -120,7 +120,7 @@ header .name {
 .top-picks {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr repeat(2, 500px);
+  grid-template-rows: 1fr repeat(2, 510px);
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 
@@ -169,6 +169,48 @@ header .name {
     p {
       margin-top: 5px;
       font-size: 18px;
+    }
+
+    .prises {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.card .buttons {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &.cart {
+      background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      &:hover {
+        box-shadow: var(--color-purple) 0 2px 5px;
+      }
+    }
+
+    &.favorite {
+      width: 30px;
+      background-color: transparent;
+    }
+
+    img {
+      height: 20px;
+      width: 20px;
     }
   }
 }

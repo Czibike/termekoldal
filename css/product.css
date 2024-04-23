@@ -1,15 +1,19 @@
 :root {
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
   --l-bronze: #daaa5e;
   --m-bronze: #cd7f32;
   --d-bronze: #804a0d;
-  --l-claret: #990D35;
-  --m-claret: #5A0002;
-  --d-claret: #44001A;
-  --l-orange: #EF8354;
+  --l-claret: #990d35;
+  --m-claret: #5a0002;
+  --d-claret: #44001a;
+  --l-orange: #ef8354;
   --m-orange: #fa792e;
-  --d-orange: #E53D00;
+  --d-orange: #e53d00;
   --l-pink: #cf669b;
-  --m-pink: #F51AA4;
+  --m-pink: #f51aa4;
   --d-pink: #b32577;
 }
 
@@ -60,6 +64,43 @@ body {
   }
 }
 
+.option {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* <select> styles */
+  select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 15rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8rem center / 1.4rem,
+      linear-gradient(to left, var(--arrow-bg) 3rem, var(--select-bg) 3rem);
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+    }
+    /* <option> colors */
+    option {
+      color: inherit;
+      background-color: var(--option-bg);
+    }
+  }
+}
+
 .options {
   width: 100%;
   display: flex;
@@ -77,10 +118,10 @@ body {
     aspect-ratio: 1;
     border: 2px solid white;
     border-radius: 50%;
-    
+
     img {
-    display: none;
-  }
+      display: none;
+    }
   }
 
   input[type="radio"]:checked + label {
