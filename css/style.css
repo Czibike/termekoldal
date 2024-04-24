@@ -223,14 +223,10 @@ header .name {
   * {
     margin: 10px;
   }
-
-  video {
-    width: 20%;
-  }
 }
 
 .short-AboutUs {
-  width: 75%;
+  width: 85%;
   margin: 1rem auto;
 
   h1 {
@@ -243,7 +239,8 @@ header .name {
 }
 
 .allYouNeedToKnow {
-  margin: 2rem;
+  width: 85%;
+  margin: 2rem auto;
 
   details {
     margin-top: 1rem;
@@ -283,7 +280,11 @@ header .name {
 .contactForm {
   padding: 1rem;
   margin: 1px auto;
-  width: 95%;
+  width: 85%;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .contactForm form {
@@ -294,13 +295,14 @@ header .name {
 }
 
 .contactForm form .form-container {
+  width: 100%;
   margin-top: 1.5rem;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* .contactForm form .container input {
+.contactForm form .form-container input {
   width: 250px;
   height: 25px;
   appearance: none;
@@ -311,7 +313,7 @@ header .name {
   border-radius: 0.2em 0.2em 0 0;
   padding: 0.4em;
   color: var(--color-darkpurple);
-} */
+}
 .contactForm form .form-container.textarea-container {
   display: flex;
   flex-direction: column;
