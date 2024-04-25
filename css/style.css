@@ -411,6 +411,11 @@ footer .copyright:last-child {
     text-align: center;
     font-size: 2rem;
   }
+
+  .sort-and-grid {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .products .sort-and-grid {
@@ -454,14 +459,45 @@ footer .copyright:last-child {
   }
 }
 
-.products .products-container {
-  margin: 10px 10%;
+.products-container {
+  margin: 1rem 10%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
 }
 
+.list {
+  margin: 1rem 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list > .card {
+  width: 100%;
+
+  & > a {
+    display: flex;
+    flex-direction: row;
+
+    > img {
+      width: 150px;
+      margin: 5px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  .text-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
 /*-----contact-----*/
 main.contact-page {
   width: 85%;

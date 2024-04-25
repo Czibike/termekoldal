@@ -11,12 +11,6 @@
       href="./images/assect/favorite_FILL0_wght400_GRAD0_opsz24.png"
       type="image/x-icon"
     />
-    <style>
-      .sort-and-grid {
-        display: flex;
-        justify-content: space-around;
-      }
-    </style>
   </head>
   <body>
     <header id="header"></header>
@@ -45,16 +39,37 @@
               <label for="switch"></label>
             </div>
           </div>
-          <div class="products-container">
-            <div class="card">
+          <div class="products-container list" id="products-container">
+            <div class="card product-card">
               <a href="./products/bronze.html">
                 <img src="./images/Bogy On-the-Glow Light Bronze.jpg" alt="" />
-                <p>Bogy On-the-Glow Light Bronze</p>
-                <p><del>2950 Ft</del></p>
-                <p>2213 Ft</p>
+                <div class="text-buttons">
+                  <div class="textarea">
+                    <h3>On-the-Glow Light Bronze</h3>
+                    <div class="prises">
+                      <p><del>4999 Ft</del></p>
+                      <p>3750 Ft</p>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <button class="cart">
+                      <span>Kosár</span>
+                      <img
+                        src="./images/assect/shopping_cart.png"
+                        alt="kosár"
+                      />
+                    </button>
+                    <button class="favorite">
+                      <img
+                        src="./images/assect/favorite_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="favorite"
+                      />
+                    </button>
+                  </div>
+                </div>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/bronze.html">
                 <img src="./images/Bogy On-the-Glow Bronze.jpg" alt="" />
                 <p>Bogy On-the-Glow Bronze</p>
@@ -62,7 +77,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/bronze.html">
                 <img src="./images/Bogy On-the-Glow Dark Bronze.jpg" alt="" />
                 <p>Bogy On-the-Glow Dark Bronze</p>
@@ -70,7 +85,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/claret.html">
                 <img src="./images/Bogy On-the-Glow Light Claret.jpg" alt="" />
                 <p>Bogy On-the-Glow Light Claret</p>
@@ -78,7 +93,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/claret.html">
                 <img src="./images/Bogy On-the-Glow Claret.jpg" alt="" />
                 <p>Bogy On-the-Glow Claret</p>
@@ -86,7 +101,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/claret.html">
                 <img src="./images/Bogy On-the-Glow Dark Claret.jpg" alt="" />
                 <p>Bogy On-the-Glow Dark Claret</p>
@@ -94,7 +109,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/orange.html">
                 <img src="./images/Bogy On-the-Glow Light Orange.jpg" alt="" />
                 <p>Bogy On-the-Glow Light Orange</p>
@@ -102,7 +117,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/orange.html">
                 <img src="./images/Bogy On-the-Glow Orange.jpg" alt="" />
                 <p>Bogy On-the-Glow Orange</p>
@@ -110,7 +125,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/orange.html">
                 <img src="./images/Bogy On-the-Glow Dark Orange.jpg" alt="" />
                 <p>Bogy On-the-Glow Dark Orange</p>
@@ -118,7 +133,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/pink.html">
                 <img src="./images/Bogy On-the-Glow Light Pink.jpg" alt="" />
                 <p>Bogy On-the-Glow Light Pink</p>
@@ -126,7 +141,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/pink.html">
                 <img src="./images/Bogy On-the-Glow Pink.jpg" alt="" />
                 <p>Bogy On-the-Glow Pink</p>
@@ -134,7 +149,7 @@
                 <p>2213 Ft</p>
               </a>
             </div>
-            <div class="card">
+            <div class="card product-card">
               <a href="./products/pink.html">
                 <img src="./images/Bogy On-the-Glow Dark Pink.jpg" alt="" />
                 <p>Bogy On-the-Glow Dark Pink</p>
@@ -166,5 +181,15 @@
     <footer id="footer"></footer>
     <script src="./template/footer.js"></script>
     <script src="./javascript/welcomeSign.js"></script>
+    <!-- <script>
+      const chbox = document.getElementById("switch");
+      const container = document.getElementById("products-container");
+
+      if (chbox.chec) {
+        container.classList.add("list");
+      } else {
+        container.classList.remove("list");
+      }
+    </script> -->
   </body>
 </html>
