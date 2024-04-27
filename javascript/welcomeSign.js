@@ -3,6 +3,7 @@ let obj = [
   document.getElementById("firstText"),
   document.getElementById("secondText"),
 ];
+
 for (let j = 0; j < btn.length; j++) {
   btn[j].addEventListener("click", () => {
     for (let i = 0; i < obj.length; i++) {

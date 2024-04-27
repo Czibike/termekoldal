@@ -413,17 +413,14 @@ footer .copyright:last-child {
   }
 
   .sort-and-grid {
+    margin: 10px;
     display: flex;
     justify-content: space-around;
+
+    .sort {
+      color: #00ff40;
+    }
   }
-}
-
-.products .sort-and-grid {
-  margin: 10px;
-}
-
-.products .sort-and-grid .sort {
-  color: #00ff40;
 }
 
 .products .sort-and-grid .product-grid input {
